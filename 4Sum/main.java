@@ -1,11 +1,8 @@
 class Solution {
-            public ArrayList<ArrayList<Integer>> fourSum(int[] num, int 
-            target) {
+            public ArrayList<ArrayList<Integer>> fourSum(int[] num, int target) {
                 Arrays.sort(num);
-        HashSet<ArrayList<Integer>> hashSet = new HashSet<ArrayList
-            <Integer>>();
-        ArrayList<ArrayList<Integer>> result = new ArrayList<ArrayList
-            <Integer>>();
+        HashSet<ArrayList<Integer>> hashSet = new HashSet<ArrayList<Integer>>();
+        ArrayList<ArrayList<Integer>> result = new ArrayList<ArrayList<Integer>>();
              for (int i = 0; i < num.length; i++) {
             for (int j = i + 1; j < num.length; j++) {
                 int k = j + 1;
@@ -17,8 +14,7 @@ class Solution {
                     } else if (sum < target) {
                         k++;
                     } else if (sum == target) {
-                        ArrayList<Integer> temp = new ArrayList<Integer
-                            >();
+                        ArrayList<Integer> temp = new ArrayList<Integer>();
                         temp.add(num[i]);
                         temp.add(num[j]);
                         temp.add(num[k]);
@@ -27,8 +23,7 @@ class Solution {
                             hashSet.add(temp);
                             result.add(temp);
                         }
-                        //better than l-- r++ , we avoid loss of time in 
-                            case of duplicates.
+                        //better than l-- r++ , we avoid loss of time in case of duplicates.
                         //break;
                         l--;
                         k++;
@@ -46,12 +41,10 @@ class Solution {
                 recursion(num,target, 0, 0);
         return solution;
             }
-        private void recursion(int[] num, int target, int position, int level
-        ){
+        private void recursion(int[] num, int target, int position, int level){
                 if(level==4){
             //we have to check the sum
-            int sum = current.get(0)+current.get(1)+current.get(2
-                )+current.get(3);
+            int sum = current.get(0)+current.get(1)+current.get(2)+current.get(3);
                 if (sum == target) {
                     //add solution 
                     solution.add(new LinkedList<Integer>(current));

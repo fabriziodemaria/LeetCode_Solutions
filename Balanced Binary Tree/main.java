@@ -14,8 +14,7 @@ public class Solution {
                         if(current==null){
             return true;
         }
-                        if(Math.abs(heightOfBinaryTree(current.left) - heightOfBinaryTree
-            (current.right))>1){
+                        if(Math.abs(heightOfBinaryTree(current.left) - heightOfBinaryTree(current.right))>1){
             return false;
         }
                 if(!probe(current.left)) return false;
