@@ -1,0 +1,4 @@
+Longest Common Prefix
+From: https://leetcode.com/submissions/detail/21710202/
+
+Write a function to find the longest common prefix string amongst an array of strings.
