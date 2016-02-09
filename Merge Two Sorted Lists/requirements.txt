@@ -1,0 +1,4 @@
+Merge Two Sorted Lists
+From: https://leetcode.com/submissions/detail/41151986/
+
+Merge two sorted linked lists and return it as a new list. The new list should be made by splicing together the nodes of the first two lists.
