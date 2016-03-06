@@ -1,0 +1,4 @@
+Pow(x, n)
+From: https://leetcode.com/submissions/detail/25947204/
+
+Implement pow(x, n).
